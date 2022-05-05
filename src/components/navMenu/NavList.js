@@ -20,7 +20,12 @@ const List = ({ items }) => {
 };
 
 List.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      link: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
 };
 // проверил, когда в обьект кидаешь число, ломается все)
 

@@ -1,4 +1,4 @@
-export const navLink = [
+export const navLinks = [
   {
     title: 'Home',
     link: '/',

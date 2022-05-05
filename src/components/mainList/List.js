@@ -20,7 +20,12 @@ const ListMain = ({ listData }) => {
 };
 
 ListMain.propTypes = {
-  listData: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  listData: PropTypes.arrayOf(
+    PropTypes.shape({
+      description: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
 };
 
 export default ListMain;

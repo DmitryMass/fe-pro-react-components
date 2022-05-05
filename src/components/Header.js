@@ -1,14 +1,14 @@
 import React from 'react';
 import HeaderLogo from './HeaderLogo';
 import List from './navMenu/NavList';
-import { navLink } from './navMenu/DataNav';
+import { navLinks } from './navMenu/DataNav';
 
 const Header = () => {
   return (
     <header className="header">
       <div className="container">
         <HeaderLogo>My Logo</HeaderLogo>
-        <List items={navLink} />
+        <List items={navLinks} />
       </div>
     </header>
   );
